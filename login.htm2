@@ -48,19 +48,23 @@ cursor:pointer;
 <p id="result"></p>
 </div>
 
-<script>
-function login(){
-var user = document.getElementById("username").value;
-var pass = document.getElementById("password").value;
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-if(user=="admin" && pass=="1234"){
-document.getElementById("result").innerHTML="✅ Login Successful!";
-window.location.href="dashboard.html";
-}else{
-document.getElementById("result").innerHTML="❌ Wrong Username or Password";
-}
-}
-</script>
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCaTOsWC1LB1tVHLLpvKAiqElkTYSnmp84",
+  authDomain: "shiksha-ias-24f4b.firebaseapp.com",
+  projectId: "shiksha-ias-24f4b",
+  storageBucket: "shiksha-ias-24f4b.firebasestorage.app",
+  messagingSenderId: "286780816215",
+  appId: "1:286780816215:web:822990e69ce87519849c12"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 </body>
 </html>
