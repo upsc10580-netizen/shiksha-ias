@@ -29,7 +29,26 @@ footer{background:#002147;color:white;text-align:center;padding:10px;}
 <p>India's Smart Learning Platform</p>
 <button>Start Learning</button>
 </section>
+<section style="padding:30px;text-align:center;">
+<h2>Daily Quiz</h2>
+<p id="question">भारत की राजधानी क्या है?</p>
 
+<button onclick="checkAnswer('A')">A. मुंबई</button>
+<button onclick="checkAnswer('B')">B. नई दिल्ली</button>
+<button onclick="checkAnswer('C')">C. लखनऊ</button>
+
+<p id="result"></p>
+</section>
+
+<script>
+function checkAnswer(answer){
+if(answer=='B'){
+document.getElementById("result").innerHTML="✅ Correct Answer!";
+}else{
+document.getElementById("result").innerHTML="❌ Wrong Answer!";
+}
+}
+</script>
 <footer>
 <p>© 2026 SHIKSHA I.A.S (पाठशाला)</p>
 </footer>
